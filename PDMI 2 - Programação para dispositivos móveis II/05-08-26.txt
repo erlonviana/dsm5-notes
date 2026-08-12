@@ -1,0 +1,62 @@
+Ligar o pc
+Abrir o Android Studio
+Abrir o Projeto
+Totem Aluno
+Executar o projeto (Play) (run Project application)
+
+Como declarar constante no Kotlin?
+Utilizar a palavra reservada val + nome da variável (camelCase)
+
+
+fun main(){
+    val camelCaseCasa = 0;
+    val snake_case = 0;
+    val PascalCase = 0
+    
+//O Kotlin veio suprir problemas e deficiências do Java
+//Java fortemente tipado, não pode declarar classe sem tipo
+//Em Kotlin eu posso tipar ou não uma classe
+    
+    val nome:String = "Yuri"
+    val sobrenome = "Moreira Villanova" //tipo inferido
+    
+    //criando variável: usar palavra reservada var
+    var idade = 26
+    if (idade>18){
+        println("Vc é de maior") else println("Vc é de menor")}
+    
+    var nome: String = "João" //non-nullable: sempre recebe um valor válido
+    var sobrenome: String? = null //nullable: pode ser null (mas precisa ser tipada)
+    
+    //Safe call `?.`: só executa se o sobrenome não for nulo
+    val tamanho: Int? = sobrenome?.length
+    
+    //valor !!. força o compilador a aceitar o valor que estiver na variável seja nula
+    //Elvis Operator `?:`: retorna valor padrão caso a variável seja
+    val tamanhoNaoNulo: Int = sobrenome?.lenght ?: 0 //tratativa com operador ternário para caso o valor seja nulo
+    
+    //Declarando funções (método só tem o processo, não retorna nada)(função pode ou não ter parametros e retorna algo)
+    //exemplo: fun + nomeDaFunção() {}
+    fun saudacao(){
+        println("Hello, world!")
+        
+    //Parâmetros dentro da função
+    fun ola(nomeDaVariavel:String){
+        println("Olá pessoa " + nomedaVariavel+" e tem a idade de " + idade)//concatenação clássica
+        println(Olá pessoa $nomedaVariavel e tem a idade de $idade)//interpolação: variáveltem cifrão antes 
+        println(Olá pessoa ${nomedaVariavel} e tem a idade de ${idade})//outra forma de interpolação usando {}
+    }
+    
+    fun main
+        //Saudacao com parametro nomeado
+        ola(nome="Yuri")
+        ola(nome="Yuri", "Moreira", 26)
+        ola(nome="Yuri", sobrenome: "Moreira", idade = 26)//nomeando os parâmetros, melhor prática
+        
+     //Default params: posso inserir um valor padrão sempre que a função for chamada
+     //neste caso, o valor padrão é DEFAULT_SOBRENOME
+     fun ola(nomeDaVariavel:String="DEFAULT_SOBRENOME"){
+    }
+        
+    }
+}

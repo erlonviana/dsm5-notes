@@ -1,0 +1,34 @@
+Aprendizagem de máquina AM
+Python 3.14
+Gerenciador UV 0.9.24
+Vamos utilizar FastAPI
+Cérebro: Scikit-Learn (Ml Clássico) e TensorFlow (Deep Learning)
+Ambiente: VSCode e Jupyter Notebook
+Dados: Kaggle (datasets filtrados para aprendizagem de máquina)
+
+É um conceito antigo (1950) base para as IA's que temos hoje.
+
+Tradicional: se vc não programar a regra, o software não sabe a regra.
+IA: aprende com a experiencia digital. Quanto mais ele executa a tarefa, mais ele calibra o próprio acerto.
+
+Aprende o dataset, testa se aprendeu; recebe uma acurácia; vai "aprendendo" até chegar no limite de acurácia.
+
+Para melhorar, precisa tratar novamente a base ou retroalimentar a base.
+
+OCR - reconhecimento óptico de caracteres.
+1990 - filtro de spam (primeira grande vitória de AM no nosso cotidiano)
+Hoje em dia: algoritmos de recomendação.
+
+IA -  É o campo amplo de máquinas que simulam a inteligência.
+AM - subconjunto que usa estatística para aprender com dados
+AP - aprendizado profundo: redes neurais complexas (motor de LLMs como chatGPT)
+
+Algoritmo Tracional: computador é um escravo. Paradigma imperativo (regras fixas)
+AM: computador é aprendiz de padrões. Paradigma declarativo (aprender com dados)
+
+AM é o campo de estudo que permite o PC aprender sem ser explicitamente programado.
+
+Tarefa
+performance 
+
+Google reCAPTCHA

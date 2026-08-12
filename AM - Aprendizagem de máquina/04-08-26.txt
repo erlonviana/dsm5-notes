@@ -1,0 +1,39 @@
+https://i-davies.github.io/conteudo-fatec-2026-2/AM/01_Introducao/02_Pratica/
+
+Comando no power shell:
+
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+Vai instalar o uv, uvx e uvw
+
+Dentro da pasta do projeto, criar a pasta do fastapi
+Verificar se tem o python instalado nas extensões
+Dentro da pasta 01-fastapi, executar uv init
+Ainda na pasta, executar uv venv
+Depois, uv add fastapi
+Depois, uv add uvicorn
+
+na raiz do projeto, criar main.py
+Verificar se o autosave do VSCode está ativo
+
+Para executar o script criado, executar: uv run uvicorn main:app --reload
+
+Conferir se vai rodar em http://127.0.0.1:8000 e http://127.0.0.1:8000/docs
+
+Executar uv add pydantic
+
+
+Ao lado de 01-fastapi, criar a pasta 02-notebook
+dentro de 02-notebook, executar uv init e uv venv
+Depois:
+uv add jupyter
+uv add ipykernel
+uv add matplotlib
+uv add pandas
+uv add numpy
+
+dentro do projeto 02-notebook, criar na raiz o arquivo primeiro-notebook.ipynb
+Clicar em Select Kernel (precisa escolher 02-notebook (3.14.2) (Python 3.14.2) [se não conseguir selecionar, reiniciar o VSCode]
+
+
+

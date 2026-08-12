@@ -1,0 +1,27 @@
+CN1
+
+Computação em nuvem
+AWS
+
+Tópicos que iremos estudar
+Instancia -  
+S3 Armazenamento - 
+Lambda - 
+RDS - 
+
+AWS - Amazon Web Services
+
+EC2 - Elastic Computer Cloud (não é máquina virtual, são instâncias)
+S3 - Simple Storage Service (serviço de armazenamento de objetos - qualquer tipo de arquivo, semelhante Google Drive, 5GB)
+RDS - Relation Database Service (banco de dados)
+Lambida - Serviços de código (monitoramento dos serviços da AWS)
+
+Método de respostas STAR
+Situation - introduza a situação
+Task - descreva a tarefa que tinha de fazer
+Action - explique o que vc fez e como vc fez
+Result - finalize com os resultados dos seus esforços
+
+
+
+

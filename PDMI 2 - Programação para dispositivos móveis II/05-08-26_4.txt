@@ -1,0 +1,23 @@
+fun main(){
+    controleDeFluxo(7.0)
+    }
+        
+fun controleDeFluxo(notaMedia:Double){
+    var status = if(notaMedia>=7.0)"Aprovado"else"Reprovado"
+    //when é muito útil para valores específicos que vc já conhece
+    when(notaMedia){
+        10.0 ->{
+            println("O aluno tirou 10")}
+        //inserindo um range (intervalo)
+        in 7.0..9.9->{println("O aluno passou com folga")}
+        else ->{println("O aluno precisa estudar")}
+    }
+    println("O aluno está $status")}
+
+//criando uma lista que não precisa tipar os valores
+val alunos = listOf("Cris", "de Lucca", "Ricardo", "Parada")
+//percorrendo valores da lista
+for (nome in nomeAlunos){
+    println("Aluno $nome")
+}
+

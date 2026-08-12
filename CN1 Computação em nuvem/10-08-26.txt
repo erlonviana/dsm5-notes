@@ -1,0 +1,60 @@
+Conceito de computação em nuvem
+
+Maiores empresas do mercado de nuvem:
+ - Microsoft Azure
+ - Amazon Web Services (AWS)
+ - Oracle Cloud
+ - Google Cloud
+
+Empresas que utilizam serviços em nuvem:
+Netflix
+Locaweb
+Nubank
+Uber
+Microsoft
+Spotify
+airbnb
+Adobe Creative Cloud
+Google
+Dropbox
+Amazon
+PayPal
+Kopenhagen
+
+Tipos de cloud:
+
+Public
+Modelo de TI que provedores de serviços de nuvem pública disponibilizam serviços sob demanda para organizações e pessoas pela Internet pública. O valor é menor para uso, porém vc não sabe em qual estação está a instância (a AWS compartilha servidores que os usuários podem utilizar). É o mais usado por ser mais barato (o custo é por hora utilizada).
+
+Private
+É um ambiente de nuvem dedicado a uma única organização. Vc provisiona por demanda por meio de um portal de autoatendimento.
+
+Hybrid
+É um ambiente misto em que aplicativos são executados em diferentes ambientes: nuvens públicas e privadas, incluindo datacenters ou locais de "borda". Ex: rede local e um serviço de nuvem sendo utilizados por uma corporação.
+
+
+
+
+Modos de computação em nuvem
+IaaS
+Infraestrutura: fornece servidores, armazenamento, refrigeração a empresas e indivíduos pela nuvem.
+
+PaaS (EX: Azure, Red Hat, Heruko)
+Plataforma: ambiente de desenvolvimento e implantação completo na nuvem.
+
+SaaS
+Software: Software como serviço, permite se conectar e utilizar aplicativos baseados em nuvem pela internet. Ex: Paypal, Netflix, Dropbox.
+
+Data Center
+Edificação onde ficam os servidores (hacks) com gerenciamento 
+
+Data's Center Brasil
+Curitiba
+São Paulo
+João Pessoa
+
+AWS
+
+
+
+

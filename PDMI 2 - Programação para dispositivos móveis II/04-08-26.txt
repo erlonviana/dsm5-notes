@@ -1,0 +1,25 @@
+Fundamentos
+Components
+Layout components
+Navigation
+API
+Camera
+GPS
+SQlite ou Room
+
+Abrir o android Studio
+Fatec apps> autorizar wifi
+
+No android studio
+New Project> Empty Activity
+Inserir nome e pasta do projeto
+Finish
+
+Vai ficar importando e buildando o projeto
+
+Quando aparecer o botão de Run, executar novamente o toten aluno
+
+Run no projeto (se der erro, tentar novamente)
+Quando o projeto rodar vai aparecer na tela do celular
+
+

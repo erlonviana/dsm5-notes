@@ -1,0 +1,7 @@
+fun main(){
+    controleDeFluxo(7.0)
+    }
+        
+fun controleDeFluxo(notaMedia:Double){
+    var status = if(notaMedia>=7.0)"Aprovado"else"Reprovado"
+    println("O aluno está $status")}       

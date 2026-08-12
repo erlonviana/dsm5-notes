@@ -1,0 +1,29 @@
+fun main(){
+    colecoes()
+    }
+
+fun colecoes(){
+    //lista imutável
+    val nomes = listOf("Cris", "Cata", "Ananda")
+    //lista mutável
+    val notas = mutableListOf(8,7,9)
+    //inserindo uma nova nota na lista acima
+    notas.add(10)
+    notas.add(10) //inserindo item repetido na lista
+    println("Notas"+notas)
+    
+    //lista que não aceita itens repetidos
+    val frutas = setOf("Maçã", "Morango", "Banana", "Maçã")
+    println("Frutas"+frutas) //não vai imprimir "maçã" duas vezes
+    
+    //salvando mapeamento usando diferentes maneiras de chave-valor
+    val idades = mapOf("Yuri" to 26, Pair("Parada", 20), "Cata" to 22)
+    println("Idades"+idades)
+    
+    //mutableMapOf é uma lista mutável, preciso informar o meu tipo de chave-valor (key-value)
+    val alunos = mutableMapOf<String,Int>()
+    alunos["Cris"] = 23
+    alunos["Cris"] = 24
+    println("Alunos"+alunos)
+    
+}

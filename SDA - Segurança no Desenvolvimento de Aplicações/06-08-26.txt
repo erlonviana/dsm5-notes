@@ -1,0 +1,58 @@
+KALI LINUX
+Instalar e manusear o sistema
+
+Atividade:
+Fazer uma apresentação com os temas sorteados 
+
+
+Pentest
+Teste de penetração/intrusão. Procura pontos frascos e vulnerabilidades para antecipar a ação de invasores.
+
+White hat: invadem sistemas com permissão das organizações para descobrir pontos fracos da organização para corrigir e fortalecer a segurança internet. Recebe da organização as senhas e informações do sistema.
+
+
+black hat
+Criminosos que invadem computadores com intenções maliciosas. Podem liberar malware que destroem arquivos, computadores reféns, rouba senhas, números de cartões de crédito e outras informações pessoais.
+
+gray hat
+Procuram vulnerabilidades sem permissão do proprietário mas reportam os problemas aos mesmos. Às vezes solicitam uma pequena taxa para corrigí-los.
+
+Tipos de testes
+White box
+Tbm conhecido como teste de vidro ou teste estrutural. Os testadores têm acesso ao código-fonte e às informações detalhadas sobre sua implementação.
+
+Black Box
+Teste de penetração que o profissional não possui informações privilegiadas sobre o sistema/servidor/rede/aplicativo etc
+
+Gray box
+É um teste de penetração que combina White box e black box.
+
+Fases do PenTest:
+1. Escopo e coleta de informações
+2. Analise de vulnerabilidade
+3. Exploração
+4. Pós exploração
+5. Relatório
+
+Mercado de trabalho pentester
+Pentester
+Analista de segurança / redes
+Perito forense
+Pesquisador de vulnerabilidades
+Consultor de segurança
+Chefe/diretor de segurança
+Desenvolvedor
+Espionagem / Contra-espionagem
+
+Qualidades e habilidades:
+1. Ética e transparência
+2. inglês
+3. curiosidade
+4. gostar de desafios
+5. Persistência
+6. Resolver problemas
+7. Disciplina e estudos
+
+Kali Linux
+
+
