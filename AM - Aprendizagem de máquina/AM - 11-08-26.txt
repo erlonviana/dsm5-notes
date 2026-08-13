@@ -1,0 +1,10 @@
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+uv init am-perceptron
+cd am-perceptron
+uv add matplotlib "fastapi[standard]"
+
+abrir code .
+
+na raiz do projeto, criar o arquivo perceptron_simples.py
+

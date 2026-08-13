@@ -11,9 +11,12 @@ Se a gente tentar instanciar essa classe quando estiver na main,
 Quando vc cria um objeto e coloca um ponto ".", vc tem acesso a outras funções e classes daquele objeto (inclusive funções e classes nativas da IDE)
 
 A dataclass é para guardar e transacionar dados(pode usar para funções mas é própria para dados)
-Para manipulação, pode usar class tradicional
-
-A data class, quando é instanciada, 
+Para manipulação, pode usar class tradicional 
 
 Funções de alta ordem
 Lambda
+
+*Exercicio
+
+fun calcIrrf(SalarioBruto:Double?=null//0.0)
+Quando estou na main para chamar a função calcIrff e passar um valor null (null) dou double (0.0)
