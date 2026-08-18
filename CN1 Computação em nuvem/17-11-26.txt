@@ -1,0 +1,103 @@
+
+Apresentação - Cloud privada e híbrida
+
+Public
+Modelo de TI que provedores de serviços de nuvem pública disponibilizam serviços sob demanda para organizações e pessoas pela Internet pública. O valor é menor para uso, porém vc não sabe em qual estação está a instância (a AWS compartilha servidores que os usuários podem utilizar). É o mais usado por ser mais barato (o custo é por hora utilizada).
+
+Private
+É um ambiente de nuvem dedicado a uma única organização. Vc provisiona por demanda por meio de um portal de autoatendimento.
+
+Hybrid
+É um ambiente misto em que aplicativos são executados em diferentes ambientes: nuvens públicas e privadas, incluindo datacenters ou locais de "borda". Ex: rede local e um serviço de nuvem sendo utilizados por uma corporação.
+
+Tempo máximo - 12 min
+
+Como personalizar o console na AWS
+Pesquisar EC2 e marcar a estrela (favoritos). O mesmo para S3 e RDS (Aurora and RDS)
+
+No botão de 9 quadrados, favoritar Página inicial do console
+
+Manter a região padrão (país-região) que o console vir padronizado. Alterar para qualquer outra, embora possa ser mais rápido (Ex: São Paulo), será mais rápido.
+
+EC2 - Elástic Cloud
+É uma instância (máquina virtual, servidor) na nuvem.
+
+Clicar no EC2
+Executar instância
+ 
+Nome (da instância) - Server-Erlon
+Escolher windows (*conferir a lista dos qualificados para o nível gratuito)
+**Windows Server 2025 é muito pesado
+
+Selecionar o Server 2022 Base
+Vai gerar um ID para esta máquina
+
+Tipo de instância - t3.micro (qualificado para o nível gratuito)
+
+Par de chaves (login)> Criar novo par de chaves
+Inserir o nome
+Manter RSA e pen
+Criar par de chaves
+Vai baixar as chaves na sua pasta de downloads
+Chave para se conectar e logar no servidor que está criando
+
+Configurar armazenamento
+Manter os valores padrões
+
+No final da página, clicar em Executar instância
+
+Vai carregar a barra verde
+
+Clicar em Visualizar todas as instâncias
+
+Na nova janela, clicar na caixa de seleção ao lado do nome do servidor
+Vão aparecer os dados do servidor
+Ip público - na internet
+IP local - na rede
+
+Clicar no botão de atualizar na tela da AWS
+Confira se o Estado da Instância continua como Executando
+Quando estiver "Verificação de status: 3/3 Verificações aprovadas", a instância já está rodando
+
+Copiar o endereço IPV4 público
+
+no windows, procurar por RDP
+Colar o endereço de IP e conectar
+Vai pedir a senha (significa que a solicitação chegou na AWS)
+Mais opções
+Usar uma conta diferente
+Usuario: administrator
+
+Volta no console AWS
+Botão direito do servidor
+
+Inserir arquivo
+Descriptografar senha
+Vai mostrar a senha
+Copiar e colar no RDP
+
+Vai conectar com o widows Server na AWS
+Vai e iniciar>Shut down>continue
+
+Voltar no console AWS
+Selecionar a instância
+Vai em estado> Encerrar (excluir) instância
+A barra verde vai aparecer, iniciando o processo de exclusão da instância
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
