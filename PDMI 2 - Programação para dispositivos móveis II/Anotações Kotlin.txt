@@ -1,0 +1,167 @@
+1. Val e Var — Variáveis Mutáveis e Imutáveis
+
+fun entendendoVariaveis() {
+    // val (Value): variável IMUTÁVEL (endereço de memória não muda)
+    val pi: Double = 3.14
+    val nomeDoCurso = "Merge Skills: Android Nativo"   // Inferência de tipo
+    val nomeDoCurso = String()  // Isso cria uma string vazia ""
+
+    // var (Variable): variável MUTÁVEL (endereço de memória pode mudar, apontando outro valor)
+    var count: Int = 0
+    count = 1 // Permitido
+
+    // pi = 3.14159  // ERRO de compilação — val não pode ser reatribuída
+
+    // Tipagem explícita vs. inferência
+    val cargaHoraria: Int = 40
+    val valorDaMensalidade: Double = 99.90
+    val possuiCertificado: Boolean = true
+    val inicialDoNome: Char = 'M'
+}
+
+2. Null Safety — Proteção contra NullPointerException
+fun lidandoComNulos() {
+    var nome: String = "João"           // Non-nullable: nunca pode ser null
+    var nome: String                    //nunca pode ser null
+    var sobrenome: String? = null       // Nullable: pode ser null
+O sinal ? significa que a variável pode ser nula.
+
+Desta forma, os exemplos abaixo estão errados:
+var nome: String = null //não compila
+var nome: String? //não compila, o Kotlin não assume nada se vc não declarar
+
+Exceção:
+lateinit var sobrenome: String?  //Isso diz ao Kotlin: "Confia em mim, eu vou dar um valor para isso antes de alguém usar, mas não quero inicializar agora."
+
+
+// Safe Call `?.`: só executa se sobrenome não for nulo
+    val tamanho: Int? = sobrenome?.length
+
+Cenário 1: sobrenome tem um texto
+var sobrenome: String? = "Silva"
+val tamanho: Int? = sobrenome?.length 
+// Resultado: tamanho = 5 (porque "Silva" tem 5 letras)
+
+Cenário 2: sobrenome está nulo
+var sobrenome: String? = null
+val tamanho: Int? = sobrenome?.length
+// Resultado: tamanho = null (o código NÃO QUEBRA!)
+
+3. Funções
+// Função tradicional com parâmetros e retorno
+fun sayHello(name: String) {
+    println("Olá, $name!")
+}
+
+Execução1:
+sayHello("Ana")  // O texto "Ana" entra no lugar do parâmetro name
+
+Execução 2:
+val nomeDoUsuario = "Carlos"
+sayHello(nomeDoUsuario)  // Vai imprimir: Olá, Carlos!
+
+// Sintaxe de expressão (single-expression function)
+fun somarModerno(a: Int, b: Int) = a + b //função em uma linha, sem chaves {}
+
+Padrão antigo:
+fun somar(a: Int, b: Int): Int {
+return a + b
+}
+
+Para testar:
+// Declaração da função (sintaxe de expressão)
+fun somarModerno(a: Int, b: Int) = a + b
+
+// Ponto de entrada do programa
+fun main() {
+    // Opção 1: Jogar direto no println para ver o resultado
+    println(somarModerno(10, 5))   // Vai imprimir: 15
+
+    // Opção 2: Guardar o resultado em uma variável e depois usar
+    val resultado = somarModerno(8, 3) 
+    println(resultado)              // Vai imprimir: 11
+
+    // Opção 3: Usar o resultado em outra operação
+    val dobro = somarModerno(2, 4) * 2
+    println(dobro)                  // Vai imprimir: 12 (porque 6 * 2)
+}
+
+// Função com valores padrão nos parâmetros
+fun saudar(nome: String, saudacao: String = "Olá") { //na dúvida, o valor padrão de saudação será "olá"
+    println("$saudacao, $nome!")
+}
+
+Execução 1:
+Passando só o obrigatório (usa o padrão)
+fun main() {
+    saudar("João")  
+    // Vai imprimir: Olá, João!
+    // (Como você não passou a saudação, o Kotlin usou o valor padrão "Olá")
+}
+
+
+Execução 2:
+ Passando os dois parâmetros (substitui o padrão)
+fun main() {
+    saudar("Maria", "Bom dia")  
+    // Vai imprimir: Bom dia, Maria!
+    // (O valor padrão "Olá" foi ignorado porque você passou "Bom dia")
+}
+
+Execução 3: 
+Usando argumentos nomeados (invertendo a ordem!)
+fun main() {
+    // Você pode inverter a ordem usando os nomes dos parâmetros!
+    saudar(saudacao = "Oi", nome = "Carlos")  
+    // Vai imprimir: Oi, Carlos!
+}
+
+
+4. Controle de Fluxo — if, when e Loops
+fun controleDeFluxo(notaMedia: Double) {
+    // IF como expressão (retorna valor)
+    val status = if (notaMedia >= 7.0) "Aprovado" else "Reprovado"
+
+    // WHEN: o Switch-Case potente do Kotlin
+    when (notaMedia) {
+        10.0           -> println("Aluno Perfeito!")
+        in 7.0..9.9    -> println("Aprovado com folga")
+        else           -> println("Precisamos estudar mais")
+    }
+
+    // FOR em coleção
+    val tecnologias = listOf("Kotlin", "Jetpack Compose", "Coroutines", "Koin")
+    for (tech in tecnologias) {
+        println("Aprenderemos: $tech")
+    }
+}
+
+
+5. Coleções — List, Set, Map
+fun exemploColecoes() {
+    // LIST: coleção ordenada, permite duplicatas
+    val nomes = listOf("João", "Maria", "Pedro")    // Imutável
+    val notas = mutableListOf(8, 7, 9)              // Mutável
+    notas.add(10)                                   // [8, 7, 9, 10]
+
+    // SET: coleção de itens únicos, desordenada (mantem a ordem de inserção)
+    val frutas = setOf("Maçã", "Banana", "Morango", "Maçã")
+    // frutas conterá apenas "Maçã", "Banana", "Morango" (sem duplicata)
+
+    // MAP: pares chave-valor, chaves únicas
+    val idades = mapOf("João" to 30, "Maria" to 25)
+    val alunos = mutableMapOf<String, Int>()
+    alunos["Pedro"] = 28
+}
+
+Atenção: para recuperar os valores dentro de map, precisa usar Null Safety:
+val idadeJoao: Int = idades["João"] // ERRO! Isso não compila! "Val cannot be reassigned"
+
+Pois o Kotlin exige que vc verifique que a chave e o valor existem. Confira:
+// Correto: o retorno é sempre nullable (Int?)
+val idadeJoao: Int? = idades["João"]  
+println(idadeJoao) // Imprime: 30
+
+val idadeCarlos: Int? = idades["Carlos"] 
+println(idadeCarlos) // Imprime: null (seguro, não quebra!)
+
