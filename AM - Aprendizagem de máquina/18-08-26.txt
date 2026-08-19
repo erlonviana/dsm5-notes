@@ -1,0 +1,18 @@
+Continuando sobre perceptron
+
+Na aula anterior, fizemos um modelo bem simples.
+
+Para trabalhar com várias entradas, temos um problema na tipagem dinamica do python.
+
+Toda vez que vc insere uma variavel ele confere a tipagem para proceder os calculos.
+
+Dentro de um For (loop para tomar as decisões) será um problema.
+
+Por isso usamos a biblioteca Numpy
+
+SIMD (Single Instruction, Multiple-Data) - processar um vetor inteiro em um clock de CPU
+
+Damos uma matriz para o perceptron, multiplica pelos pesos, soma pelo Bias e dá um resultado
+
+uv init
+uv add numpy
