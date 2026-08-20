@@ -1,0 +1,20 @@
+Stantion fuction (função de extensão)
+Serve para vc criar uma nova função para qualquer tipo nativo (int, double, string).
+
+Como criar?
+
+Ex para formatar uma moeda como real
+Novo package>util
+
+package com.example.teste.util
+import java.util.locale //(será importada automaticamente)
+
+private val LOCALE.br = Locale(language="pt", country="BR)
+
+for Double.emReais(): String = String.format(LOCALE.br, format="R\$ %,.2f", ...args=this)
+
+const é utilizado para constantes que não devem se alterar durante o run do apk
+apenas o val, durante o run ele pode alterar o valor
+
+//RUNNING é o tempo de execução 
+val RUNNING = 1000
