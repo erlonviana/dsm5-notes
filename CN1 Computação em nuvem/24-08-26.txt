@@ -1,0 +1,73 @@
+Aprendendo a fazer ping na instancia AWS
+
+Após executar o server (conforme aula anterior), abrir o CMD no seu PC físico e executar:
+ping -t ip_publico_aws
+
+2 regras para "chegar" na instancia: desativar o firewall e criar regra no console AWS
+
+Abrir o painel de controle na instancia (PA na pesquisa)
+
+Alterar a visualização para "Large Icons"
+
+Turn off nos dois serviços do windows defender (firewall)
+
+Voltar ao console da AWS
+Com a instancia marcada, ir na aba "Segurança"
+
+Clicar em "Grupos de Segurança"
+
+Editar Regras de entrada
+
+Adicionar regra
+Selecionar "Todos os ICMPs - IPv4"
+Selecionar "Meu IP" (vai liberar para qualquer IP no mundo)
+Descrição "PING"
+
+O ping no CMD vai funcionar
+
+Agora vai na Instancia
+Abrir o Edge
+Baixar e instalar o Xampp
+Diretório do Xampp:
+C:\xampp\httdocs
+
+Salvar o codigo abaixo em index.html na área de trabalho da instância:
+<html>
+<head>
+<title> Erlon - EC2 AWS </title>
+</head>
+<body bgcolor="black">
+</body>
+</html>
+Salvar como HTML na area de trabalho
+
+Abrir painel do controle do Xampp
+Start no Apache e MySQL
+
+Abrir o explorer do windows
+
+C:\Xampp\httdocs
+Apagar todos os arquivos dentro da pasta
+Salvar o index.html dentro desta pasta
+
+Copiar ip púbnlico da instancia
+
+Abrir uma nova aba no navegador do PC fisico e colar o ip público 
+Não vai abrir a pagina HTML
+
+Console AWS
+Segurança
+Regras
+Nova regra
+Adicionar regra
+Criar uma para HTTP e outra para o HTTPS (ambas como meu IP)
+
+Só colar o IP da instância no seu navegador do PC físico, vai abrir o HTML criado
+
+Vai no server e dar Shut Down no windows Server
+
+Voltar para o Console AWS
+
+Instancias
+Marcar a instancia
+Estado a instancia>Encerrar (excluir instância)
