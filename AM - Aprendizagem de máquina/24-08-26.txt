@@ -1,0 +1,41 @@
+No perceptron temos um dataset com fase de treinamento intensivo, pesos calibrados (W, b), Predição rápida (descarta o dataset após essa fase)
+
+Percptron é da familia Eager Learning (aprendizagem ansiosa)
+
+Algoritmo KNN ou K-Vizinhos mais proximos opera sob a a filosofia Aprendizagem Baseada em Instâncias (Lazy Learning).
+
+Ex do perceptron (Eager Learning):
+Inicializa os pesos (W=0 e b=0)
+
+Para cada Epoca (base de dados), uma amostra (x, y)
+
+Calcula a predição (y=1 se z>=0, senão 0)
+
+Houve erro? (compara com o gabarito)
+
+Não -> Passa para a proxima amostra
+Sim -> Corrige Pesos W
+
+Todas as épocas concluidas? 
+
+Sim -> treinamento concluido
+Não -> reinicia o treinamento
+
+Perceptron extremamente rápido na fase de predição, é um classificador binário (sim ou não)
+
+Agora o KNN (Lazy Learning)
+
+Pega os dados, armazena em memória e faz os calculos para predição. Entidades com caracteristicas semelhantes pertencem à mesma categoria ou seguem a mesma regra. Usado em recomendações simples (e-commerce ou streaming).
+
+KNN tem duas formas de calcular:
+A distância euclidiana é a hipotenusa (Teorema de Pitágoras). É com ela que o algoritmo sabe as distâncias entre os pontos. 
+
+Outra formula de fazer: Distância de Manhatan
+
+Na ilha de Manhatan todas as ruas são retas (não há caminho na diagonal).
+
+
+
+
+
+
