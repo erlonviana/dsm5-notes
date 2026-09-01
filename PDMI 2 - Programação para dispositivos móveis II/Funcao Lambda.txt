@@ -1,0 +1,62 @@
+Claro! Vamos começar do zero, sem pressa.
+
+O que é uma lambda?
+
+Uma lambda é só uma função sem nome, que você escreve "na hora" e passa como se fosse um valor. Em vez de declarar uma função separada com fun, você escreve o comportamento ali mesmo, dentro dos { }.
+
+Compare os dois jeitos de fazer a mesma coisa:
+
+kotlin
+// Jeito "tradicional": função nomeada separada
+fun dobro(x: Int): Int {
+    return x * 2
+}
+
+val numeros = listOf(1, 2, 3)
+val resultado = numeros.map(::dobro)
+
+// Jeito lambda: a função "inline", sem nome
+val resultado2 = numeros.map { x -> x * 2 }
+
+Repare: { x -> x * 2 } é uma lambda. Ela recebe um parâmetro (x) e devolve x * 2. Tudo antes da seta -> são os parâmetros; tudo depois é o corpo da função.
+
+O que é "higher-order function"?
+
+É simplesmente uma função que aceita outra função como argumento. map, filter e forEach são funções assim: você entrega uma "receita" (a lambda) e elas aplicam essa receita em cada elemento da lista.
+
+map { ... } → transforma cada elemento e devolve uma lista nova
+filter { ... } → mantém só os elementos em que a lambda retorna true
+forEach { ... } → só executa algo para cada elemento (não gera lista nova)
+De onde vem o it?
+
+Quando a lambda tem só um parâmetro, o Kotlin deixa você omitir o x -> e chamar esse parâmetro automaticamente de it. Ou seja:
+
+kotlin
+numeros.map { x -> x * x }   // forma explícita
+numeros.map { it * it }      // forma resumida (equivalente)
+
+it é só um atalho, nada mágico — é o "parâmetro que chegou" para você usar dentro do { }.
+
+Juntando tudo com um exemplo mental
+kotlin
+val numeros = listOf(1, 2, 3, 4)
+val quadrados = numeros.map { it * it }
+
+Leia assim: "para cada it (cada número) da lista numeros, calcule it * it, e junte tudo numa lista nova chamada quadrados."
+
+Entrada: [1, 2, 3, 4]
+map pega o 1 → it=1 → 1*1=1
+pega o 2 → it=2 → 2*2=4
+pega o 3 → it=3 → 3*3=9
+pega o 4 → it=4 → 4*4=16
+Saída: [1, 4, 9, 16]
+E o "pipeline"?
+kotlin
+numeros
+    .filter { it > 2 }      // sobra [3, 4]
+    .map { it * 10 }        // vira [30, 40]
+    .forEach { println(it) } // imprime 30 e 40
+
+Isso é só encadear operações: o resultado de uma vira a entrada da próxima, como uma linha de produção. Primeiro filtra, depois transforma, depois imprime.
+
+Quer que eu monte uns exercícios pequenos e progressivos pra você praticar map/filter/forEach até isso ficar automático?
