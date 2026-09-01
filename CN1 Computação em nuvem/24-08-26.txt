@@ -18,6 +18,8 @@ Clicar em "Grupos de Segurança"
 
 Editar Regras de entrada
 
+**Atenção: não apagar a regra RDP
+
 Adicionar regra
 Selecionar "Todos os ICMPs - IPv4"
 Selecionar "Meu IP" (vai liberar para qualquer IP no mundo)
@@ -50,7 +52,7 @@ C:\Xampp\httdocs
 Apagar todos os arquivos dentro da pasta
 Salvar o index.html dentro desta pasta
 
-Copiar ip púbnlico da instancia
+Copiar ip público da instancia
 
 Abrir uma nova aba no navegador do PC fisico e colar o ip público 
 Não vai abrir a pagina HTML
