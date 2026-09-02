@@ -1,5 +1,3 @@
-Claro! Vamos começar do zero, sem pressa.
-
 O que é uma lambda?
 
 Uma lambda é só uma função sem nome, que você escreve "na hora" e passa como se fosse um valor. Em vez de declarar uma função separada com fun, você escreve o comportamento ali mesmo, dentro dos { }.
