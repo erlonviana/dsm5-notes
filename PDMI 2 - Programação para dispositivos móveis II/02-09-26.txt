@@ -1,0 +1,4 @@
+build gradle kts chama as dependências salvas em libs.version
+
+dp: densidade por pixel
+
