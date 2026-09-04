@@ -1,0 +1,28 @@
+Cabear notebook no switch
+
+Antes de executar a vm do kalilinux, veja se a placa de rede está
+configurada como Bridge e a opção abaixo como Ethernet
+
+Executar o Kali e logue, no TERMINAL (CTRL+ALT+T), digite 
+ifconfig
+veja se a VM do Kali adquiriu o IP 192.168.0.xxx
+
+executar o ping em algum 
+
+Principais ferramentas Kali Linux
+
+NMAP
+
+nmap -sn 192.168.0.0/24
+nmap -v -sn 192.168.0.0/24 #mostra quem está up e down
+
+Vai listar todos os ips e mostrara quem está UP e DOWN na rede
+
+Gerar arquivo com Ips encontrados na rede:
+nmap -v -sn 192.168.0.0/24 | grep 10 | cut -d '' -f 5 > ips_teste.txt
+
+depois que gerar, pressionar ls 
+depois digite cat ips_teste.txt
+
+ProxyChains
+
