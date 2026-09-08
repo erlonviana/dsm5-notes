@@ -23,3 +23,6 @@ build-backend = "uv_build"
 dev = [
     "notebook>=7.6.2",
 ]
+
+[tool.ruff.lint]
+ignore = ["I001"]

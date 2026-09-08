@@ -1,5 +1,6 @@
 """
 Implementação de Classificador KNN em Python Puro (Sem numpy)
+O KNN (K-Nearest Neighbors) classifica um novo ponto com base nos K vizinhos mais próximos
 """
 import math
 
@@ -12,7 +13,7 @@ def distancia_euclidiana(p1, p2):
 
 
 def distancia_manhattan(p1, p2):
-    """Calcula a distancia Manhattan (caminho em grade) entre dois pontos"""
+    """Calcula a distancia Manhattan (caminho em grade, igual um taxi numa cidade) entre dois pontos"""
     #abs = numero absoluto (retira negativos)
     dx = abs(p1[0] - p2[0])
     dy = abs(p1[1] - p2[1])
