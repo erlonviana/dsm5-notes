@@ -1,0 +1,69 @@
+S3 é um serviço de armazenamento na nuvem como Drive, Onedrive etc
+
+Permite armazenar objetos nele
+
+Simple Storage Service S³
+
+Buckets: baldes, salvamos os documentos dentro deles (são as "pastas")
+
+S3 Standard
+
+S3 Standard - Infrequent Access
+
+S3 Glacier Deep Archive (mais barato)
+
+Passo a passo:
+
+Procurar o S3 na busca
+
+Criar bucket
+
+Preencher o nome do bucket
+
+Manter ACL's desabilitadas
+
+Desmarcar "Bloquear todo o acesso publico"
+
+Versionamento: manter desativado
+
+Clicar em criar bucket
+
+Voltar no S3 (busca>pagina inicial)
+
+Abrir o bucket
+
+Clicar em carregar
+
+Arrastar os arquivos e soltar
+
+Executar Instancia EC2
+
+Baixar e instalar o S3 browser
+
+No pagina da AWS, clicar no nome do usuario e vai em Credenciais de segurança
+
+Clicar em Criar chave de acesso
+
+Confirma e clicar em criar
+
+Vai gerar a chave de acesso e a chave de acesso secreta (copiar e colar ambos no S3 Browser)
+
+Vai abrir o bucket criado e exibir os arquivos no S3 Browser
+
+Clicar em New Bucket
+
+Agora volte no console da AWS
+
+Vai em S3
+
+Vai aparecer o bucket anterior e o novo bucket criado
+
+Desligar a instancia
+
+Exclua a instância
+
+Voltar ao S3
+
+Marcar o bucket
+Excluir
+
