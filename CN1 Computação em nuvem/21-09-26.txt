@@ -1,0 +1,128 @@
+Criando VPC na Amazon
+
+Clicar em Criar VPC
+
+Marcar SOMENTE VPC
+
+Inserir um nome para a VPC
+
+Determinar a range de IP
+10.12.27.0/24
+
+/24 é a mascara de sub-rede 255.255.255.0
+Classe A de IP
+ultimo octeto sempre é zero
+
+CRIAR VPC
+
+No menu à esquerda, clicar em Suas VPCs
+
+Aparecem duas VPCs (uma é default, não pode ser apagada)
+
+Criando uma subrede (subnet)
+
+No menu à esquerda, clicar em Sub-redes
+Clicar em criar VPC
+
+Em id da VPC, selecionar a Fatec
+
+Agora, inserir o nome da subnet
+subnet-fatec
+
+Bloco CIDR IPv4 da sub-rede
+10.12.27.0/24 (usar o mesmo da VPC)
+
+Criar subnet
+
+Criando um Gateway de Internet (porta de saída da rede para a internet)
+
+No menu à esquerda, clicar em Gateways da Internet
+
+Criar gateway da internet
+
+Tag de nome: gateway-fatec
+
+Criar gateway da Internet
+
+Associando gateway a uma VPC
+
+Clicar novamente na esquerda Gateways da Internet
+
+Marcar o gateway-fatec
+
+Clicar em Associar a uma VPC
+
+Na proxima tela, selecionar a VPC criada anteriormente
+
+Clicar em Associar gateway da internet
+
+Criando tabelas de rotas
+
+No menu à esquerda, selecionar Tabelas de rotas
+
+Criar tabelas de rotas
+
+Nome: rotas_fatec
+
+Selecionar a VPC fatec
+
+Criar tabela de rotas
+
+Editando as rotas
+
+No menu à esquerda, clicar em Tabelas de rotas
+
+Selecionar a rotas_fatec
+
+Clicar em cima de "ID da tabela de rotas"
+
+Na proxima tela, clicar em Editar rotas
+
+Adicionar rota
+
+Selecionar o IP 0.0.0.0/0 , Gateway da Internet e embaixo marcar em igw o gateway da fatec
+
+Salvar alterações
+
+
+
+Associar a tabela de rotas a uma subnet
+
+Clicar no menu na esquerda em Sub redes
+
+Selecionar a rota fatec
+
+Ações > Editar associação da tabela de rotas
+
+Selecionar a rota_fatec
+
+Salvar
+
+Agora vai em EC2
+
+Executar instância
+
+Além das configurações padrões, agora vai em configurações de rede>editar
+
+Selecionar a VPC_fatec
+Marcar Atribuir IP público automaticamente
+
+Executar a instância
+
+Conferir em EC2 se já está criando a instância solicitada
+
+Marcar a instância
+
+Verificar se o IP público segue a regra
+
+Apagar a VPC
+
+Vai em VPC>marcar a VPC>Botão direito>Excluir VPC
+Vai excluir a VPC, sub-rede e a tabela de rotas também
+
+Conferir se a VPC, Sub-rede e tabelas de rotas foram excluidas
+
+
+
+
+
