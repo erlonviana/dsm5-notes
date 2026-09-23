@@ -1,0 +1,23 @@
+[project]
+name = "am-avaliacao-modelos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+am-avaliacao-modelos = "am_avaliacao_modelos:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "notebook>=7.6.3",
+]
