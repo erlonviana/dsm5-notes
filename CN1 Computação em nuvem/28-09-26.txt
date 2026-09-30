@@ -1,0 +1,10 @@
+Criar VPC (Virtual Private Cloud)
+nome vpc_fatec
+CIDR ipv4 10.12.27.0/24
+
+Subrede
+Gateway
+ASsociar Gateway à VPC
+Tabelas de rotas
+
+X!Eh3.srB!)ap3s!pz2a;?4yp;PgDDIT
