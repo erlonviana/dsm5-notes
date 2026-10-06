@@ -1,0 +1,12 @@
+Virtualização:
+
+usar o hardware do PC para gerar um sistema operacional e criar essa maquina virtual com um software cliente que vai um pouco do hardware da sua máquina física. Basicamente replicar sistemas operacionais dentro do seu PC, diminuindo a quantidade de PCs na sua rede.
+
+vwware
+
+Virtualização ou nuvem
+
+PF Sense, sistema operacional linux que faz o controle de acesso à internet em um servidor
+
+
+

@@ -1,0 +1,19 @@
+Construção de Pipeline com Scikit-learn
+Normalmente a gente:
+Pre-processamento
+carrega os algoritmos
+Realiza as predições
+
+Para evitar data-leak
+
+Pipeline: organização de criação do fluxo de uma única vez
+Treino:70%
+TEste: 30%
+
+fit: treinar com os dados
+predict: estimativas que vai ter no treinamento
+
+Transformar:
+
+Pipeline: padronização (definição de dados que o modelo pode usar) e transformação (transformar a verificação atendendo o que o modelo aprendeu no treino)
+
