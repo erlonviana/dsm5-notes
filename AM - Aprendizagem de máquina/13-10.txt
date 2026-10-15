@@ -1,0 +1,6 @@
+Teorema de Bayes
+É uma formula matematica que ensina como analisar nossa amostra com base em evidências
+Qual a chance desta amostra pertencer à esta classe?
+Ex: spam
+
+Classificador probabilistico
