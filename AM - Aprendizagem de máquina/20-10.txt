@@ -1,0 +1,40 @@
+Redes Neurais Multicamadas: Arquitetura e Fundamentos
+
+O perceptron fazia classificação binária
+
+Problema da não-linearidade (XOR)
+
+Ele faz apenas o AND ou OR
+XOR não consegue separar em uma reta
+
+XOR significa Exclusive OR (OU Exclusivo). É uma operação lógica muito usada em programação, eletrônica e criptografia.
+
+A regra é simples: XOR retorna verdadeiro (1) quando os dois valores são diferentes e falso (0) quando são iguais.
+
+Se vc plotar em um grafico X,Y, não é possível cruzá-lo em uma reta
+
+1
+
+0    1
+
+Por isso foi criado o MLP (multi-layer perceptron)
+
+Camada de entrada
+Camadas ocultas
+Camada de saída
+
+Backpropagation (retro-programação): o algoritmo avalia o proprio resultado durante cada época
+
+Funções de ativação
+Sigmoide
+Tanh (tangente hiperbolica)
+ReLu
+
+uv init
+ 
+uv add scikit-learn numpy matplotlib pandas joblib
+
+
+
+ 
+ 
