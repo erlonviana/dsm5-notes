@@ -1,0 +1,5 @@
+{
+  "detail": "Pipeline de Churn não disponível na memória."
+}
+
+https://i-davies.github.io/conteudo-fatec-2026-2/AM/09_Redes_Neurais_MLP/03_Deploy_API_FastAPI/
