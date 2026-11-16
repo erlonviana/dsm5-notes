@@ -1,0 +1,32 @@
+Conceito de nuvem:
+Data center - disponibilidade sob demanda de recursos de computação como serviços na internet.
+
+ Cage privado
+
+Iass Pass SasS
+
+EC2 - Elastic Computing Cloud (criar instância)
+Simple Storage Service - S3
+RDS - Relation Database System - Banco de dados Relacional
+Lambda - Criação de funções (Java, Javascript, Python etc)
+
+T3.micro - tipo de hardware mais barato instância mais barato
+
+Bucket (balde) = pasta
+
+S3 Browse e Cyberduck
+
+ExpanDrive
+
+WinSCP
+
+VPC - Rede privada 
+
+Quais são os serviços de VPC necessários para criar uma VPC:
+VPC, Subnet, Gateway e Rotas de internet
+
+Virtualização
+VmWare (uso profissional), Virtual Box (usos domesticos), Proxmox (Linux)
+
+Virtualização (local) ou nuvem?
+
